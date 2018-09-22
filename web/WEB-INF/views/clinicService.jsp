@@ -32,7 +32,7 @@
     <jsp:useBean id="obj" class="model.ClinicService" scope="request"/>
     <div class="row">
         <c:set var="i" value="0" scope="page"/>
-        <c:forEach var="clinicService" items="${ClinicService.serviceList}" >
+        <c:forEach var="clinicService" items="${clinic_services}" >
         <c:set var="n" value="${i%3}"/>
         <c:if test="${n == 0}">
     </div>
