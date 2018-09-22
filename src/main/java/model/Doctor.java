@@ -1,6 +1,8 @@
 package model;
 
 
+import java.time.LocalDate;
+
 public class Doctor extends Person{
 
     private DoctorSpecializations specialization;
@@ -8,6 +10,12 @@ public class Doctor extends Person{
     private String clinicserviceId;
 
     public Doctor() {
+    }
+
+    public Doctor(String id, String first_name, String last_name, LocalDate dob, Address address, String email, String phoneNumber, String clinicserviceId) {
+        super(id,first_name, last_name, dob, address, email, phoneNumber);
+        this.clinicserviceId = clinicserviceId;
+
     }
 
     public DoctorSpecializations getSpecialization() {

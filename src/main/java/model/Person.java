@@ -14,6 +14,17 @@ public class Person {
     public Person() {
     }
 
+    public Person(String id, String first_name, String last_name, LocalDate dob, Address address, String email, String phone_number) {
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.dob = dob;
+        this.address = address;
+        this.email = email;
+        this.phone_number = phone_number;
+    }
+
+
     public String getId() {
         return id;
     }

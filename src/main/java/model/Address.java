@@ -10,6 +10,13 @@ public class Address {
     public Address() {
     }
 
+    public Address(String street, String city, String state, String zipcode) {
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
+    }
+
     public String getStreet() {
         return street;
     }

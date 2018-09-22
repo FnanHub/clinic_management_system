@@ -37,7 +37,7 @@ public class ClinicService {
         return clinicServiceList;
     }
 
-    public String getClinicserviceId() {
+    public  String getClinicserviceId() {
         return clinicserviceId;
     }
 
