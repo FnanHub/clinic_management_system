@@ -5,6 +5,7 @@ public class Doctor extends Person{
 
     private DoctorSpecializations specialization;
     private String description;
+    private String clinicserviceId;
 
     public Doctor() {
     }
@@ -23,5 +24,13 @@ public class Doctor extends Person{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getClinicserviceId() {
+        return clinicserviceId;
+    }
+
+    public void setClinicserviceId(String clinicserviceId) {
+        this.clinicserviceId = clinicserviceId;
     }
 }

@@ -7,12 +7,12 @@
 
 
     <servlet>
-        <servlet-name>home</servlet-name>
-        <servlet-class>controller.HomePage</servlet-class>
+        <servlet-name>clinicService</servlet-name>
+        <servlet-class>controller.ClinicService</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>home</servlet-name>
-        <url-pattern>/home</url-pattern>
+        <servlet-name>clinicService</servlet-name>
+        <url-pattern>/clinicService</url-pattern>
     </servlet-mapping>
 
 
