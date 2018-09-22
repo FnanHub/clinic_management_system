@@ -15,5 +15,14 @@
         <url-pattern>/clinicService</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>about</servlet-name>
+        <servlet-class>controller.About</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
