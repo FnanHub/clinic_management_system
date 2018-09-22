@@ -47,15 +47,15 @@
 
     </div>
     <div class='row'>
-        <hr>
+        <hr><hr>
         </c:if>
         <div class='col-md-4'>
             <p><img src='${clinicService.clinicServiceImgUrl}' width=200 height=200 class='img-thumbnail'/></p>
             <h3 class='text-primary'>${clinicService.clinicServiceName}</h3>
             <p class='text-success'>Description: <strong>${clinicService.description}</strong></p>
                 <%--<p><a id="service_details" href='#' class='btn btn-default'>View Details</a></p>--%>
-            <button class="doctors_list" class='btn btn-default' value='${clinicService.clinicserviceId}'>Doctor's list
-            </button>
+            <button class="btn btn-default doctors_list" value='${clinicService.clinicserviceId}'>Doctor's list
+            </button><br><br>
             <c:set var="i" value="${i+1}"/>
         </div>
 
