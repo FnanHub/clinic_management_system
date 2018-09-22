@@ -35,14 +35,17 @@
         <c:forEach var="clinicService" items="${clinic_services}" >
         <c:set var="n" value="${i%3}"/>
         <c:if test="${n == 0}">
+
     </div>
     <div class='row'>
+        <hr>
         </c:if>
         <div class='col-md-4'>
             <p><img src='${clinicService.clinicServiceImgUrl}' width=200 height=200 class='img-thumbnail'/> </p>
             <h3 class='text-primary'>${clinicService.clinicServiceName}</h3>
-            <p class='text-success'>Trainer: <strong>${clinicService.description}</strong></p>
+            <p class='text-success'>Description: <strong>${clinicService.description}</strong></p>
             <p><a href='#' class='btn btn-default'>View Details</a></p>
+            <p><a href='#' class='btn btn-default'>View Specialists</a></p>
             <c:set var="i" value="${i+1}"/>
         </div>
 

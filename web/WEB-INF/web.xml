@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>clinicService</servlet-name>
-        <servlet-class>controller.ClinicService</servlet-class>
+        <servlet-class>controller.ClinicalServiceController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>clinicService</servlet-name>
