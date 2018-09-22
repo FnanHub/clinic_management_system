@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<%@include file="WEB-INF/header.jsp" %>
+<%@include file="WEB-INF/views/header.jsp" %>
 
 <!-- Page Content -->
 <div class="container">
@@ -97,7 +97,7 @@
 <!-- /.container -->
 
 <!-- Footer -->
-<%@include file="WEB-INF/footer.jsp"%>
+<%@include file="WEB-INF/views/footer.jsp"%>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>

@@ -23,7 +23,7 @@
 <body>
 
 <header class="business-header">
-    <%@include file="../header.jsp"%>
+    <%@include file="header.jsp"%>
 </header>
 <section>
     <div class="container">
@@ -91,7 +91,7 @@
     </div>
 </section>
 
-    <%@include file="../footer.jsp"%>
+    <%@include file="footer.jsp"%>
 
 </body>
 </html>

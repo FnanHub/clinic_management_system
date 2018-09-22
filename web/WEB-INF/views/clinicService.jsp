@@ -34,7 +34,7 @@
 </head>
 <body>
 
-    <%@include file="../header.jsp" %>
+    <%@include file="header.jsp" %>
 
 <article>
 
@@ -66,7 +66,7 @@
 </article>
 
 
-    <%@include file="../footer.jsp" %>
+    <%@include file="footer.jsp" %>
 
 
 
