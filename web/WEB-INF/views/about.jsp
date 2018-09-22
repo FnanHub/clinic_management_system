@@ -37,7 +37,7 @@
             <div class="col-lg-6 order-lg-2">
                 <div class="p-5">
 
-                    <img class="img-fluid rounded-circle" src="resources/imgabout/smile.jpg" alt="">
+                    <img class="img-fluid rounded-circle" src="resources/img/imgabout/smile.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -55,7 +55,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="resources/imgabout/skin.jpg" alt="">
+                    <img class="img-fluid rounded-circle" src="resources/img/imgabout/skin.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -76,7 +76,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
                 <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="resources/imgabout/cardio.jpg" alt="">
+                    <img class="img-fluid rounded-circle" src="resources/img/imgabout/cardio.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-6 order-lg-1">
