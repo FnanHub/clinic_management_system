@@ -12,6 +12,14 @@ public class DoctorsDeo {
 
     private static Map<String, Doctor> doctors = new HashMap<>();
 
+    public static Map<String, Doctor> getDoctors() {
+        return doctors;
+    }
+
+    public static void setDoctors(Map<String, Doctor> doctors) {
+        DoctorsDeo.doctors = doctors;
+    }
+
     static {
         Address address = new Address("2000 North court street", "Fairfield", "IA", "52556");
 
@@ -63,6 +71,8 @@ public class DoctorsDeo {
 
 
     }
+
+
 
 
 }

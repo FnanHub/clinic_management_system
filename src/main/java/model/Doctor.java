@@ -1,7 +1,13 @@
 package model;
 
 
+import deo.DoctorsDeo;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Doctor extends Person{
 
@@ -41,4 +47,15 @@ public class Doctor extends Person{
     public void setClinicserviceId(String clinicserviceId) {
         this.clinicserviceId = clinicserviceId;
     }
+
+    public static List<Doctor> doctorList(){
+        Map<String, Doctor> doclist = DoctorsDeo.getDoctors();
+        List<Doctor> doct = new ArrayList<>();
+
+        for(String key: doclist.keySet()){
+            doct.add(doclist.get(key));
+        }
+        return doct;
+    }
+
 }

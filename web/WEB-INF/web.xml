@@ -25,4 +25,24 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>adminlogin</servlet-name>
+        <servlet-class>controller.AdminLogIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminlogin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>adminhome</servlet-name>
+        <servlet-class>controller.AdminHomeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminhome</servlet-name>
+        <url-pattern>/admin_home</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
