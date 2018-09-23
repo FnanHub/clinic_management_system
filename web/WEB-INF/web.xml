@@ -4,8 +4,6 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-
-
     <servlet>
         <servlet-name>clinicService</servlet-name>
         <servlet-class>controller.ClinicalServiceController</servlet-class>
@@ -23,6 +21,15 @@
         <servlet-name>about</servlet-name>
         <url-pattern>/about</url-pattern>
     </servlet-mapping>
+
+    <!--<servlet>-->
+        <!--<servlet-name>doctorsList</servlet-name>-->
+        <!--<servlet-class>controller.DoctorsListController</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>doctorsList</servlet-name>-->
+        <!--<url-pattern>/doctors_list</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 
 </web-app>
