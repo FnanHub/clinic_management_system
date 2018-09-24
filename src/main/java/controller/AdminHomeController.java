@@ -2,6 +2,7 @@ package controller;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import model.ClinicService;
 import model.Doctor;
 
 import javax.servlet.ServletException;
@@ -26,16 +27,16 @@ public class AdminHomeController extends HttpServlet {
 
         System.out.println("please work for as ");
 
-        if("Act".equals("services")){
+        if("services".equals("services")){
 
-            List<Doctor> doctors = Doctor.doctorList();
+            List<ClinicService> clinicService = ClinicService.getClinicServices();
 
-//            for (Doctor d: doctors){
-//                System.out.println(d.toString());
-//            }
+            for (ClinicService d: clinicService){
+                System.out.println(d.toString());
+            }
 
             try{
-                out.print(mapper.writeValueAsString(doctors));
+                out.print(mapper.writeValueAsString(clinicService));
             }catch (JsonGenerationException e){
                 e.printStackTrace();
             }
@@ -44,19 +45,12 @@ public class AdminHomeController extends HttpServlet {
 
             List<Doctor> doctors = Doctor.doctorList();
 
-//            for (Doctor d: doctors){
-//                System.out.println(d.toString());
-//            }
-
             try{
                 out.print(mapper.writeValueAsString(doctors));
             }catch (JsonGenerationException e){
                 e.printStackTrace();
             }
         }
-
-
-
 
 
     }

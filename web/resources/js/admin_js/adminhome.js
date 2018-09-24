@@ -21,13 +21,31 @@ $(function(){
 
 
     function process_ser_list(data) {
+        $('#tbl_list').css("display", "none");
+        $('#serv_list').css("display", "block");
+
+        data.forEach(sers => {
+            console.log("data recieved from Ajax " + sers.clinicServiceName);
+
+            let td_clinicserviceId = $('<td>').text(sers.clinicserviceId);
+            let td_clinicServiceName = $('<td>').text(sers.clinicServiceName);
+            let td_description = $('<td>').text(sers.description);
+            let td_clinicServiceImgUrl = $('<td>').text(sers.clinicServiceImgUrl);
+            let td_delete = $('<button id=' + sers.id +'/>').text('Delete').click(function () { alert('hi ' + sers.id); });
+            let tr = $('<tr>').append(td_clinicserviceId).append(td_clinicServiceName).append(td_description).append(td_clinicServiceImgUrl).append(td_delete);
+
+            $('#data_list').append(tr);
+
+        })
 
     }
 
     function process_doc_list(data) {
         $('#tbl_list').css("display", "block");
+        $('#serv_list').css("display", "none");
+
         data.forEach(docs => {
-            console.log("data recieved from Ajax " + docs.first_name);
+
 
             let td_id = $('<td>').text(docs.id);
             let td_firstName = $('<td>').text(docs.first_name);
