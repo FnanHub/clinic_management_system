@@ -63,4 +63,8 @@ public class Doctor extends Person{
         return doct;
     }
 
+    public static void deleteDoctorById(String id){
+        DoctorsDeo.deleteDoctorById(id);
+    }
+
 }

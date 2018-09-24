@@ -67,6 +67,21 @@ public class AdminHomeController extends HttpServlet {
             }
 
         }
+        else if(act_opt.equals("delete_doc")){
+
+            String doc_id = actButton.getId();
+
+            Doctor.deleteDoctorById(doc_id);
+
+            List<Doctor> doctorList = Doctor.doctorList();
+
+            try{
+                out.print(mapper.writeValueAsString(doctorList));
+            }catch (JsonGenerationException e){
+                e.printStackTrace();
+            }
+
+        }
 
 
     }

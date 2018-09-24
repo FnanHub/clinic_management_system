@@ -43,7 +43,7 @@ $(function(){
     function delete_service(service_id) {
 
         return function() {
-            alert('hi ' + service_id);
+            // alert('hi ' + service_id);
             $("#data_ser_list tr").remove();
             const act = 'delete_service';
             let admin_home = {action: act, id: service_id};
@@ -57,17 +57,27 @@ $(function(){
 
         data.forEach(docs => {
 
-
             let td_id = $('<td>').text(docs.id);
             let td_firstName = $('<td>').text(docs.first_name);
             let td_LastName = $('<td>').text(docs.last_name);
             let td_Email = $('<td>').text(docs.email);
             let td_phone = $('<td>').text(docs.phone_number);
-            let td_delete = $('<button id=' + docs.id +'/>').text('Delete').click(function () { alert('hi ' + docs.id); });
+            let td_delete = $('<button id=' + docs.id +'/>').text('Delete').click(delete_doc(docs.id));
             let tr = $('<tr>').append(td_id).append(td_firstName).append(td_LastName).append(td_Email).append(td_phone).append(td_delete);
 
             $('#data_list').append(tr);
         })
+    }
+
+    function delete_doc(doc_id) {
+
+        return function() {
+            // alert('hi ' + service_id);
+            $("#data_list tr").remove();
+            const act = 'delete_doc';
+            let actButton = {action: act, id: doc_id};
+            $.get("admin_home", {button_action: JSON.stringify(actButton)}, process_doc_list, "json")
+        }
     }
 
 })
