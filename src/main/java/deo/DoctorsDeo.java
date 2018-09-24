@@ -5,7 +5,9 @@ import model.Address;
 import model.Doctor;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class DoctorsDeo {
@@ -70,6 +72,15 @@ public class DoctorsDeo {
         doctors.put("1036",new Doctor("1036","Merih36", "Gebreyohannes", LocalDate.of(1990, 03, 23), address, "merih@mum.edu", "862-704-4056", "6"));
 
 
+    }
+
+    public static List<Doctor> getDoctorsList(){
+        List<Doctor> dlist = new ArrayList<>();
+        for(String key: doctors.keySet()){
+            dlist.add(doctors.get(key));
+        }
+
+        return dlist;
     }
 
 

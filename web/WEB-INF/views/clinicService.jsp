@@ -38,6 +38,7 @@
 <article>
 
     <jsp:useBean id="obj" class="model.ClinicService" scope="request"/>
+    <jsp:useBean id="obj2" class="model.Doctor" scope="request" />
     <div class="row">
         <c:set var="i" value="0" scope="page"/>
         <c:forEach var="clinicService" items="${clinic_services}">
@@ -52,9 +53,11 @@
             <p><img src='${clinicService.clinicServiceImgUrl}' width=200 height=200 class='img-thumbnail'/></p>
             <h3 class='text-primary'>${clinicService.clinicServiceName}</h3>
             <p class='text-success'>Description: <strong>${clinicService.description}</strong></p>
-                <%--<p><a id="service_details" href='#' class='btn btn-default'>View Details</a></p>--%>
             <button class="doctors_list btn btn-default" value='${clinicService.clinicserviceId}'>Doctor's list
             </button><br><br>
+            <%--<div id="doc${clinicService.clinicserviceId}"> </div>--%>
+            <div id="doc"> </div>
+
             <c:set var="i" value="${i+1}"/>
         </div>
 
