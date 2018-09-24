@@ -23,11 +23,14 @@ public class AdminHomeController extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
 
-//        String  act = mapper.readValue(req.getParameter("act"), String.class);
 
-        System.out.println("please work for as ");
+        ActButton actButton = mapper.readValue(req.getParameter("button_action"), ActButton.class);
 
-        if("services".equals("services")){
+        System.out.println("please work for as " + actButton.toString());
+
+        String act_opt = actButton.getAction();
+
+        if(act_opt.equals("services")){
 
             List<ClinicService> clinicService = ClinicService.getClinicServices();
 
@@ -41,7 +44,7 @@ public class AdminHomeController extends HttpServlet {
                 e.printStackTrace();
             }
         }
-        else if("Act".equals("doctors")){
+        else if(act_opt.equals("doctors")){
 
             List<Doctor> doctors = Doctor.doctorList();
 

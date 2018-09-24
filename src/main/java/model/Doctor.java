@@ -24,6 +24,11 @@ public class Doctor extends Person{
 
     }
 
+    public static List<Doctor> getDoctorsList(String serviceId) {
+        System.out.println("this is not implemented ");
+        return new ArrayList<>();
+    }
+
     public DoctorSpecializations getSpecialization() {
         return specialization;
     }

@@ -6,15 +6,18 @@ $(function(){
 
     function getList() {
         // alert( this.value + " is clicked")
-        const act = this.value;
+        var act = this.value;
         const doc = 'doctors';
         const ser = 'services';
 
+
+        let admin_home = {action: act};
+
         if(act === doc){
-            $.get("admin_home", act, process_doc_list, "json")
+            $.get("admin_home", {button_action: JSON.stringify(admin_home)}, process_doc_list, "json")
 
         }else if (act === ser) {
-            $.get("admin_home", act, process_ser_list, "json")
+            $.get("admin_home", {button_action: JSON.stringify(admin_home)}, process_ser_list, "json")
         }
 
     }
@@ -30,11 +33,10 @@ $(function(){
             let td_clinicserviceId = $('<td>').text(sers.clinicserviceId);
             let td_clinicServiceName = $('<td>').text(sers.clinicServiceName);
             let td_description = $('<td>').text(sers.description);
-            let td_clinicServiceImgUrl = $('<td>').text(sers.clinicServiceImgUrl);
-            let td_delete = $('<button id=' + sers.id +'/>').text('Delete').click(function () { alert('hi ' + sers.id); });
-            let tr = $('<tr>').append(td_clinicserviceId).append(td_clinicServiceName).append(td_description).append(td_clinicServiceImgUrl).append(td_delete);
+            let td_delete = $('<button id=' + sers.clinicserviceId +'/>').text('Delete').click(function () { alert('hi ' + sers.clinicserviceId); });
+            let tr = $('<tr>').append(td_clinicserviceId).append(td_clinicServiceName).append(td_description).append(td_delete);
 
-            $('#data_list').append(tr);
+            $('#data_ser_list').append(tr);
 
         })
 
