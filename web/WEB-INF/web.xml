@@ -22,15 +22,6 @@
         <url-pattern>/about</url-pattern>
     </servlet-mapping>
 
-    <!--<servlet>-->
-        <!--<servlet-name>doctorsList</servlet-name>-->
-        <!--<servlet-class>controller.DoctorsListController</servlet-class>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>doctorsList</servlet-name>-->
-        <!--<url-pattern>/doctors_list</url-pattern>-->
-    <!--</servlet-mapping>-->
-
 
     <servlet>
         <servlet-name>adminlogin</servlet-name>
@@ -51,5 +42,22 @@
         <url-pattern>/admin_home</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ClinicDocContr</servlet-name>
+        <servlet-class>controller.ClinicalDocController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClinicDocContr</servlet-name>
+        <url-pattern>/clinicalDocCont</url-pattern>
+    </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>reservation</servlet-name>
+        <servlet-class>controller.ReservationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reservation</servlet-name>
+        <url-pattern>/reserve</url-pattern>
+    </servlet-mapping>
 </web-app>

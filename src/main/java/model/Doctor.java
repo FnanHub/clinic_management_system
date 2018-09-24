@@ -29,6 +29,11 @@ public class Doctor extends Person{
         return new ArrayList<>();
     }
 
+    public static List<Doctor> getDoctorByClinicServicId(String doc_id) {
+        List<Doctor> doctorList = Doctor.doctorList();
+        return doctorList.stream().filter(doc -> doc.clinicserviceId.equals(doc_id)).collect(Collectors.toList());
+    }
+
     public DoctorSpecializations getSpecialization() {
         return specialization;
     }
@@ -65,6 +70,10 @@ public class Doctor extends Person{
 
     public static void deleteDoctorById(String id){
         DoctorsDeo.deleteDoctorById(id);
+    }
+
+    public static Doctor getDoctorById(String doc_id){
+       return DoctorsDeo.getDoctorById(doc_id);
     }
 
 }
