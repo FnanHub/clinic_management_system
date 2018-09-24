@@ -1,8 +1,18 @@
 
 body {
-    background-color: lightcyan;
+    background-image: url("https://hdwallpaper20.com/wp-content/uploads/data/2018/3/5/best-background-powerpoint-presentation-pictures-PIC-HWB36272-1024x612.jpg");
+
 }
 /* The Modal (background) */
+#id01{
+
+    border-radius: 3px;
+    padding: 15px 32px;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+    font-size: 12px;
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -45,8 +55,8 @@ body {
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+    -webkit-animation: animatezoom 2s;
+    animation: animatezoom 2s
 }
 
 @-webkit-keyframes animatezoom {
@@ -57,4 +67,9 @@ body {
 @keyframes animatezoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
+}
+h1{
+    text-align :center;
+    margin :auto;
+    font-size:larger;
 }

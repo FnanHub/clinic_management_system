@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html lang="en">
 <head>
     <title>Log In</title>
@@ -14,8 +15,8 @@
 </head>
 <body>
 <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
+<button  onclick="document.getElementById('id01').style.display='block'">Login</button>
+<h1>Welcome Admin</h1>
 <!-- The Modal -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"

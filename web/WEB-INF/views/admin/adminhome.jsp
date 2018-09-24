@@ -11,7 +11,7 @@
     <title>Title</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/admin_js/adminhome.js" type="text/javascript" ></script>
-
+     <link href="resources/css/admincss/adminhome.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 
