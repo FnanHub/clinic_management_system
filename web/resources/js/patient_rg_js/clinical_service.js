@@ -7,10 +7,10 @@ $(function(){
         // data = JSON.parse(data);
         console.log("list of doctors replayed");
 
-        var td0=$('<td>').text(data.first_name);
-        var td1 = $('<td>').text(data.last_name);
-        var td2 = $('<td>').text(data.email);
-        var tr = $('<tr>').append(td0).append(td1).append(td2);
+        let td0=$('<td>').text(data.first_name);
+        let td1 = $('<td>').text(data.last_name);
+        let td2 = $('<td>').text(data.email);
+        let tr = $('<tr>').append(td0).append(td1).append(td2);
 
         console.log(data.first_name);
         $('#doc').append(tr);
