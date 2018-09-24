@@ -2,12 +2,26 @@ package controller;
 
 public class ActButton {
     private String action;
+    private String id;
 
     public ActButton() {
     }
 
     public ActButton(String action) {
         this.action = action;
+    }
+
+    public ActButton(String action, String id) {
+        this.action = action;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getAction() {

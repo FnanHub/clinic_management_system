@@ -10,7 +10,6 @@ $(function(){
         const doc = 'doctors';
         const ser = 'services';
 
-
         let admin_home = {action: act};
 
         if(act === doc){
@@ -22,10 +21,10 @@ $(function(){
 
     }
 
-
     function process_ser_list(data) {
         $('#tbl_list').css("display", "none");
         $('#serv_list').css("display", "block");
+
 
         data.forEach(sers => {
             console.log("data recieved from Ajax " + sers.clinicServiceName);
@@ -33,13 +32,23 @@ $(function(){
             let td_clinicserviceId = $('<td>').text(sers.clinicserviceId);
             let td_clinicServiceName = $('<td>').text(sers.clinicServiceName);
             let td_description = $('<td>').text(sers.description);
-            let td_delete = $('<button id=' + sers.clinicserviceId +'/>').text('Delete').click(function () { alert('hi ' + sers.clinicserviceId); });
+            let td_delete = $('<button id=' + sers.clinicserviceId +'/>').text('Delete').click(delete_service(sers.clinicserviceId));
             let tr = $('<tr>').append(td_clinicserviceId).append(td_clinicServiceName).append(td_description).append(td_delete);
 
             $('#data_ser_list').append(tr);
 
         })
 
+    }
+    function delete_service(service_id) {
+
+        return function() {
+            alert('hi ' + service_id);
+            $("#data_ser_list tr").remove();
+            const act = 'delete_service';
+            let admin_home = {action: act, id: service_id};
+            $.get("admin_home", {button_action: JSON.stringify(admin_home)}, process_ser_list, "json")
+        }
     }
 
     function process_doc_list(data) {

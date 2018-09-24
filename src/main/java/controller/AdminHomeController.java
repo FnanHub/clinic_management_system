@@ -2,6 +2,7 @@ package controller;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import deo.ClinicServiceDeo;
 import model.ClinicService;
 import model.Doctor;
 
@@ -53,6 +54,18 @@ public class AdminHomeController extends HttpServlet {
             }catch (JsonGenerationException e){
                 e.printStackTrace();
             }
+        } else if(act_opt.equals("delete_service")){
+            String serviceid = actButton.getId();
+            ClinicServiceDeo.deleteServiceById(serviceid);
+
+            List<ClinicService> clinicService = ClinicService.getClinicServices();
+
+            try{
+                out.print(mapper.writeValueAsString(clinicService));
+            }catch (JsonGenerationException e){
+                e.printStackTrace();
+            }
+
         }
 
 

@@ -37,4 +37,8 @@ public class ClinicServiceDeo {
     public static void setClinicServiceMap(Map<String, ClinicService> clinicServiceMap) {
         ClinicServiceDeo.clinicServiceMap = clinicServiceMap;
     }
+
+    public static void deleteServiceById(String id){
+        clinicServiceMap.remove(id);
+    }
 }
