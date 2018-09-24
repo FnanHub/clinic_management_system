@@ -81,4 +81,17 @@ public class Person {
     public void setPhone_number(String phone_number) {
         this.phone_number = phone_number;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id='" + id + '\'' +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", dob=" + dob +
+                ", address=" + address +
+                ", email='" + email + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                '}';
+    }
 }
