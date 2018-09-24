@@ -84,6 +84,8 @@ public class DoctorsDeo {
     }
 
 
+    public static void deleteDoctorById(String id) {
 
-
+        doctors.remove(id);
+    }
 }

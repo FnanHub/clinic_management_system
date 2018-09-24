@@ -36,5 +36,19 @@
     </tbody>
 </table>
 
+<table id="serv_list" style="display: none;">
+    <thead>
+    <tr>
+        <th>clinicserviceId</th>
+        <th>clinicService Name</th>
+        <th>description  </th>
+        <th>Action </th>
+    </tr>
+    </thead>
+    <tbody  id="data_ser_list">
+
+    </tbody>
+</table>
+
 </body>
 </html>

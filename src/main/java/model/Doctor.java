@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Doctor extends Person{
 
@@ -24,7 +25,7 @@ public class Doctor extends Person{
     }
 
     public static List<Doctor> getDoctorsList(String serviceId) {
-        System.out.println("this is not implemented getter ");
+        System.out.println("this is not implemented ");
         return new ArrayList<>();
     }
 
@@ -60,6 +61,10 @@ public class Doctor extends Person{
             doct.add(doclist.get(key));
         }
         return doct;
+    }
+
+    public static void deleteDoctorById(String id){
+        DoctorsDeo.deleteDoctorById(id);
     }
 
 }

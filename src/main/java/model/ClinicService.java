@@ -68,4 +68,14 @@ public class ClinicService {
     public void setClinicServiceImgUrl(String clinicServiceImgUrl) {
         this.clinicServiceImgUrl = clinicServiceImgUrl;
     }
+
+    @Override
+    public String toString() {
+        return "ClinicService{" +
+                "clinicserviceId='" + clinicserviceId + '\'' +
+                ", clinicServiceName='" + clinicServiceName + '\'' +
+                ", description='" + description + '\'' +
+                ", clinicServiceImgUrl='" + clinicServiceImgUrl + '\'' +
+                '}';
+    }
 }
