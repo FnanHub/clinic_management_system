@@ -7,7 +7,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Doctor extends Person{
 
@@ -22,6 +21,11 @@ public class Doctor extends Person{
         super(id,first_name, last_name, dob, address, email, phoneNumber);
         this.clinicserviceId = clinicserviceId;
 
+    }
+
+    public static List<Doctor> getDoctorsList(String serviceId) {
+        System.out.println("this is not implemented getter ");
+        return new ArrayList<>();
     }
 
     public DoctorSpecializations getSpecialization() {

@@ -3,8 +3,13 @@ package controller;
 public class ActButton {
     private String action;
 
+    public ActButton() {
+    }
 
-    
+    public ActButton(String action) {
+        this.action = action;
+    }
+
     public String getAction() {
         return action;
     }
