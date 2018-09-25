@@ -27,8 +27,6 @@ public class AdminHomeController extends HttpServlet {
 
         ActButton actButton = mapper.readValue(req.getParameter("button_action"), ActButton.class);
 
-        System.out.println("please work for as " + actButton.toString());
-
         String act_opt = actButton.getAction();
 
         if(act_opt.equals("services")){

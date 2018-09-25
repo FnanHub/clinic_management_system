@@ -74,7 +74,7 @@
 
             <div class="wrap-input100">
                 <span class="label-input100">Date You Want</span>
-                <input class="input100" type="date" name="phone" placeholder="Phone Number...">
+                <input class="input100" type="date" name="date" placeholder="Phone Number...">
                 <span class="focus-input100"></span>
             </div>
 

@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>confirmation</title>
-    <link href="resources/css/reservation.css" type="text/css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/resources/css/reservation.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="jumbotron text-xs-center">
@@ -21,7 +21,7 @@
         Having trouble? Contact us.
     </p>
     <p class="lead">
-        <a class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" role="button">Continue to homepage</a>
+        <a class="btn btn-primary btn-sm" href="clinicService" role="button">Continue to our services</a>
     </p>
 </div>
 </body>

@@ -16,6 +16,10 @@ public class Appointment {
         this.appointmentDate = appointmentDate;
     }
 
+    public static void saveAppointment(Appointment appointment) {
+        deo.AppointmentDeo.saveApt(appointment);
+    }
+
     public String getPatientID() {
         return patientID;
     }

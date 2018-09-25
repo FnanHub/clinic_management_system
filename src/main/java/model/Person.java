@@ -24,6 +24,13 @@ public class Person {
         this.phone_number = phone_number;
     }
 
+    public Person(String id, String full_name, String email, String phone) {
+        this.first_name = full_name;
+        this.last_name = full_name;
+        this.email = email;
+        this.phone_number = phone;
+    }
+
 
     public String getId() {
         return id;
