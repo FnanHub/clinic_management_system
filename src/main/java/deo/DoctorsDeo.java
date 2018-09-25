@@ -78,4 +78,8 @@ public class DoctorsDeo {
 
         doctors.remove(id);
     }
+
+    public static Doctor getDoctorById(String doc_id) {
+        return null;
+    }
 }
