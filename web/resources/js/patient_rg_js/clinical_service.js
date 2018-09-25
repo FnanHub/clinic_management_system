@@ -4,13 +4,8 @@ $(function () {
 
     function make_reservation(doc_id) {
         return function () {
-            let doct = {action: doc_id};
-
-            $.post("/WEB-INF/views/reservation_form.jsp", { name: "John", time: "2pm" },
-                function(data){
-                    alert("Data Loaded: " + data);
-                });
-        }
+                    alert(" reservation made: " + doc_id);
+                };
     }
 
     function processList(data) {
@@ -22,8 +17,7 @@ $(function () {
             let td_lastname = $('<td >').text(doc.last_name);
             let td_firstname = $('<td>').text(doc.first_name);
             let td_email = $('<td>').text(doc.email);
-            let td_reservation = $('<button id=' + doc.id + ' class="btn btn-default" />').text('Reserve').click(make_reservation(doc.id));
-
+            let td_reservation = $('<button id=' + doc.id + ' class="btn btn-primary btn-sm btn-default" />').text('Reserve').click(make_reservation(doc.id));
             let tr = $('<tr>').append(td_lastname).append(td_firstname).append(td_email).append(td_reservation);
 
             $('#doc_table' + selector).css("display", "block");
