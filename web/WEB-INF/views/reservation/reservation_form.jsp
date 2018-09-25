@@ -45,11 +45,11 @@
 
     <div class="contact100-more">
         <i class="zmdi zmdi-phone-in-talk"></i>
-        (+100) 345 6389
+        +(862) 704-4056
     </div>
 
     <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
+        <form class="contact100-form validate-form" action="reserve" method="post">
 				<span class="contact100-form-title">
 					Make Reservation
 				</span>

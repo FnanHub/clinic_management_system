@@ -12,13 +12,16 @@ public class ReservationController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Reservation started");
 
-        req.getSession().setAttribute("ReservationControllers", model.ClinicService.getClinicServices());
         RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/views/reservation/reservation_form.jsp");
         rd.forward(req, resp);
+
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("reservation is made at Post");
 
+        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/views/reservation/reservation.jsp");
+        rd.forward(req, resp);
     }
 }
