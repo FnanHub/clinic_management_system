@@ -15,7 +15,7 @@
 <div class="jumbotron text-xs-center">
     <h1 class="display-3">Thank You!</h1>
     <hr>
-    <p class="lead">your Reservation is Sucessfull. <strong>Please check your email </strong> for further informations.</p>
+    <p class="lead">your Reservation is Sucessfull. Please check your email for further informations.</p>
 
     <p>
         Having trouble? Contact us.
