@@ -1,39 +1,50 @@
-$(function(){
-
+$(function () {
+    'use strict'
     $('.doctors_list').click(getDoctors);
 
+    function make_reservation(doc_id) {
+        return function () {
+            let doct = {action: doc_id};
+
+            $.post("/WEB-INF/views/reservation_form.jsp", { name: "John", time: "2pm" },
+                function(data){
+                    alert("Data Loaded: " + data);
+                });
+        }
+    }
 
     function processList(data) {
-        // data = JSON.parse(data);
-        console.log("list of doctors replayed");
 
-        let td0=$('<td>').text(data.first_name);
-        let td1 = $('<td>').text(data.last_name);
-        let td2 = $('<td>').text(data.email);
-        let tr = $('<tr>').append(td0).append(td1).append(td2);
+        data.forEach(doc => {
+            console.log("data recieved from Ajax " + doc.email + " " + doc.last_name + " " + doc.first_name + " " + doc.clinicserviceId);
+            let selector = doc.clinicserviceId;
 
-        console.log(data.first_name);
-        $('#doc').append(tr);
+            let td_lastname = $('<td >').text(doc.last_name);
+            let td_firstname = $('<td>').text(doc.first_name);
+            let td_email = $('<td>').text(doc.email);
+            let td_reservation = $('<button id=' + doc.id + ' class="btn btn-default" />').text('Reserve').click(make_reservation(doc.id));
 
+            let tr = $('<tr>').append(td_lastname).append(td_firstname).append(td_email).append(td_reservation);
+
+            $('#doc_table' + selector).css("display", "block");
+            $("#doc_body" + selector).append(tr);
+
+        })
     }
 
     function handleError(data) {
         console.log("ajax call failred")
     }
 
-    function getDoctors(){
-        // alert("button clicked" + this.value);
-        const serviceId = this.value;
-        // $.get('doctors_list', serviceId, processList);
+    function getDoctors() {
 
-        $.get('doctors_list',{doc: JSON.stringify(serviceId)}, processList, "json")
+        $('.table').css("display", "none");
 
-        // $.ajax("doctors_list", {
-        //     "type": "GET",
-        //     "data": {
-        //         "serviceId": serviceId
-        //     }
-        // }) .done(processList)
-        //     .fail(handleError);
+        let doc_id = this.value;
+        // alert("hi pizza " + doc_id);
+        let doct = {action: doc_id};
+
+        $.get('clinicalDocCont', {doc: JSON.stringify(doct)}, processList, "json").fail(handleError)
+
     }
 })

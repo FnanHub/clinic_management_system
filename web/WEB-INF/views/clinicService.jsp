@@ -56,9 +56,21 @@
             <p class='text-success'>Description: <strong>${clinicService.description}</strong></p>
             <button  id="doclist" class="doctors_list btn btn-default" value='${clinicService.clinicserviceId}'>Doctor's list
             </button><br><br>
-            <%--<div id="doc${clinicService.clinicserviceId}"> </div>--%>
-            <div id="doc"> </div>
 
+                <table class="table" id="doc_table${clinicService.clinicserviceId}" style="display: none;">
+                    <thead>
+                    <tr>
+                        <th>Last Name</th>
+                        <th>First Name </th>
+                        <th>E-mail</th>
+                        <th>Reservation</th>
+
+                    </tr>
+                    </thead>
+                    <tbody  id="doc_body${clinicService.clinicserviceId}">
+
+                    </tbody>
+                </table>
             <c:set var="i" value="${i+1}"/>
         </div>
 
