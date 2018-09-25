@@ -35,11 +35,11 @@
 
             <p>To optimize the health and well-being of the people and communities we serve through patient-centered, high quality, and compassionate services.</p>
             <p>
-                <a class="btn btn-primary btn-lg" href="clinicService">See More about our services &raquo;</a>
+                <a class="btn btn-primary btn-lg" href="clinicService"><strong>See More about our services</strong> &raquo;</a>
             </p>
         </div>
         <div class="col-sm-4">
-            <h2 class="mt-4">Contact Us</h2>
+            <h2 class="mt-4"><strong>Contact Us</strong></h2>
             <address>
                 <strong>MsquareK</strong>
                 <br>2000 N court st
@@ -62,7 +62,7 @@
             <div class="card">
                 <img class="card-img-top" src="resources/img/dentist.jpg" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Dental Care</h4>
+                    <h4 class="card-title"><strong>Dental Care</strong></h4>
                     <p class="card-text">Complete dental care for you and your family to bring out your best smile.</p>
                 </div>
 
@@ -72,7 +72,7 @@
             <div class="card">
                 <img class="card-img-top" src="resources/img/cardio.jpg" height="200" width="300" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Cardiology care</h4>
+                    <h4 class="card-title"><strong>Cardiology care</strong></h4>
                     <p class="card-text">  expert cardiologists in treating heart conditions, including those that are rare and complex with Successful treatment</p>
                 </div>
 
@@ -82,7 +82,7 @@
             <div class="card">
                 <img class="card-img-top" src="resources/img/images.jpeg" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">General Surgery</h4>
+                    <h4 class="card-title"><strong>General Surgery</strong></h4>
                     <p class="card-text">Our primary goal is the health and happiness
                         of you and your family</p>
                 </div>

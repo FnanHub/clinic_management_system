@@ -22,13 +22,13 @@
 
 <table id="tbl_list" style="display: none;">
     <thead>
-    <tr>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name </th>
-        <th>E-mail</th>
-        <th>Phone number</th>
-        <th>Action </th>
+    <tr >
+        <th id="idlist"><strong><u>Id</u></strong></th>
+        <th><strong><u>First Name</u></strong></th>
+        <th><strong><u>Last Name</u></strong> </th>
+        <th><strong><u>E-mail</u></strong></th>
+        <th><strong><u>Phone number</u></strong></th>
+        <th ><strong><u>Action</u> </strong></th>
     </tr>
     </thead>
     <tbody  id="data_list">
@@ -38,17 +38,16 @@
 
 <table id="serv_list" style="display: none;">
     <thead>
-    <tr>
-        <th>clinicserviceId</th>
-        <th>clinicService Name</th>
-        <th>description  </th>
-        <th>Action </th>
+    <tr >
+        <th><strong><u>ClinicserviceId</u></strong></th>
+        <th><strong><u>ClinicService Name</u></strong></th>
+        <th><strong><u>Description</u> </strong> </th>
+        <th><strong><u>Action </u></strong></th>
     </tr>
     </thead>
     <tbody  id="data_ser_list">
 
     </tbody>
 </table>
-
 </body>
 </html>

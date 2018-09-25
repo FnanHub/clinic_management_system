@@ -32,7 +32,7 @@ $(function(){
             let td_clinicserviceId = $('<td>').text(sers.clinicserviceId);
             let td_clinicServiceName = $('<td>').text(sers.clinicServiceName);
             let td_description = $('<td>').text(sers.description);
-            let td_delete = $('<button id=' + sers.clinicserviceId +'/>').text('Delete').click(delete_service(sers.clinicserviceId));
+            let td_delete = $('<button id="serdel" id=' + sers.clinicserviceId +'/>').text('Delete').click(delete_service(sers.clinicserviceId));
             let tr = $('<tr>').append(td_clinicserviceId).append(td_clinicServiceName).append(td_description).append(td_delete);
 
             $('#data_ser_list').append(tr);
@@ -62,7 +62,7 @@ $(function(){
             let td_LastName = $('<td>').text(docs.last_name);
             let td_Email = $('<td>').text(docs.email);
             let td_phone = $('<td>').text(docs.phone_number);
-            let td_delete = $('<button id=' + docs.id +'/>').text('Delete').click(delete_doc(docs.id));
+            let td_delete = $('<button id="docdel" id=' + docs.id +'/>').text('Delete').click(delete_doc(docs.id));
             let tr = $('<tr>').append(td_id).append(td_firstName).append(td_LastName).append(td_Email).append(td_phone).append(td_delete);
 
             $('#data_list').append(tr);
@@ -79,5 +79,6 @@ $(function(){
             $.get("admin_home", {button_action: JSON.stringify(actButton)}, process_doc_list, "json")
         }
     }
+
 
 })

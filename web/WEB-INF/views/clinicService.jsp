@@ -29,13 +29,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <link href="resources/css/clinicservice.css" type="text/css" rel="stylesheet">
 
 </head>
 <body>
 
     <%@include file="header.jsp" %>
 
-<article>
+<article id="docli">
 
     <jsp:useBean id="obj" class="model.ClinicService" scope="request"/>
     <jsp:useBean id="obj2" class="model.Doctor" scope="request" />
@@ -53,7 +54,7 @@
             <p><img src='${clinicService.clinicServiceImgUrl}' width=200 height=200 class='img-thumbnail'/></p>
             <h3 class='text-primary'>${clinicService.clinicServiceName}</h3>
             <p class='text-success'>Description: <strong>${clinicService.description}</strong></p>
-            <button class="doctors_list btn btn-default" value='${clinicService.clinicserviceId}'>Doctor's list
+            <button  id="doclist" class="doctors_list btn btn-default" value='${clinicService.clinicserviceId}'>Doctor's list
             </button><br><br>
             <%--<div id="doc${clinicService.clinicserviceId}"> </div>--%>
             <div id="doc"> </div>
@@ -68,6 +69,7 @@
 </article>
 
     <%@include file="footer.jsp" %>
+
 
 </body>
 </html>

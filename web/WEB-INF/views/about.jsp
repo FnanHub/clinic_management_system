@@ -29,11 +29,11 @@
     <div class="container">
         <div class="row align-items-center">
             <h1 class="display-4">About us</h1>
-            <p>Our clinic is fully equipped with the highest standards of technology.
+            <p><strong>Our clinic is fully equipped with the highest standards of technology.
                 Our primary and specialty care is provided by experts from all medical specialties, attracting patients from different states.
                 We offer our care in convenient, comfortable settings, using the most advanced approaches and with the best outcomes as our goal.
                 Our friendly and service minds are comfortable bright setting endeavors to make your visit with us a wonderful and pleasant one.
-            </p>
+            </strong></p>
             <div class="col-lg-6 order-lg-2">
                 <div class="p-5">
 
@@ -61,9 +61,9 @@
             <div class="col-lg-6">
                 <div class="p-5">
                     <h2 class="display-4">Dermatology</h2>
-                    <p>At The Iowa Clinic our dermatology providers specialize in treating a full range of skin concerns for patients of all ages.
+                    <p><strong>At The Iowa Clinic our dermatology providers specialize in treating a full range of skin concerns for patients of all ages.
                         We offer some of the latest innovations in the treatment of skin cancer as well as the most effective approaches to treating other common skin concerns.
-                        We want to help you maintain healthy skin for life.
+                        We want to help you maintain healthy skin for life.</strong>
                     </p>
                 </div>
             </div>
@@ -82,9 +82,9 @@
             <div class="col-lg-6 order-lg-1">
                 <div class="p-5">
                     <h2 class="display-4">Cardiology </h2>
-                    <p>our cardiovascular services include heart care, heart surgery, and treatment for all types of heart disease.
+                    <p><strong>our cardiovascular services include heart care, heart surgery, and treatment for all types of heart disease.
                         Our specialties are cardiology, cardiothoracic surgery, vascular surgery, and many others.
-                        We focus our treatment around the patient with customized plans to fit your needs.</p>
+                        We focus our treatment around the patient with customized plans to fit your needs.</strong></p>
                 </div>
             </div>
         </div>

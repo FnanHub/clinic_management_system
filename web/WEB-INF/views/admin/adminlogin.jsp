@@ -16,7 +16,8 @@
 <body>
 <!-- Button to open the modal login form -->
 <button  onclick="document.getElementById('id01').style.display='block'">Login</button>
-<h1>Welcome Admin</h1>
+<h1>Welcome to MsquareK Clinic</h1>
+<h1>Admin Login Page</h1>
 <!-- The Modal -->
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
