@@ -1,6 +1,10 @@
 $(function(){
     'use strict'
-
+    // $('#logout').click(log_out_admin)
+    //
+    // function log_out_admin(){
+    //
+    // }
 
     $(".admin").click(getList);
 

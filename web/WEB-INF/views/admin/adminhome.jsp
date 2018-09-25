@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+
     <title>Title</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="${pageContext.request.contextPath}/resources/js/admin_js/adminhome.js" type="text/javascript" ></script>
@@ -18,6 +19,10 @@
 <button id="doc" class="admin" value="doctors"> doctors</button>
 
 <button id="ser" class="admin" value="services"> services</button>
+
+
+    <a  id="logout" href="logout" class="admin" value="logout"> LogOut </a>
+
 
 
 <table id="tbl_list" style="display: none;">
@@ -34,6 +39,16 @@
     <tbody  id="data_list">
 
     </tbody>
+    <%
+        String userName = null;
+        Cookie[] cookies = request.getCookies();
+        if(cookies !=null){
+            for(Cookie cookie : cookies){
+                if(cookie.getName().equals("user")) userName = cookie.getValue();
+            }
+        }
+        if(userName == null) response.sendRedirect("admin");
+    %>
 </table>
 
 <table id="serv_list" style="display: none;">

@@ -4,7 +4,7 @@ body {
 }
 
 #doc {
-    background-color: #005cbf;
+    background-color: #6691df;
     border-radius: 3px;
     color: white;
     padding: 15px 32px;
@@ -18,7 +18,7 @@ body {
 }
 
 #ser {
-    background-color: #005cbf;
+    background-color: #6691df;
     border-radius: 3px;
     color: white;
     padding: 15px 32px;
@@ -29,14 +29,30 @@ body {
     cursor: pointer;
     font-size: 12px;
 
+
+}
+#logout {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: #6691df;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
 }
 
 #serdel {
-    background-color: #005cbf;
+    background-color: #6691df;
 }
 
 #docdel {
-    background-color: #005cbf;
+    background-color: #6691df;
 }
 
 .servicecol {

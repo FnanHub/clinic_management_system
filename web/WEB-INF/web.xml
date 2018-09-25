@@ -60,4 +60,15 @@
         <servlet-name>reservation</servlet-name>
         <url-pattern>/reserve</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>controller.LogOutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
